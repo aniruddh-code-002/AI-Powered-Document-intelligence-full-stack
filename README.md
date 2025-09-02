@@ -1,6 +1,7 @@
 # AI-Powered-Document-intelligence-full-stack
 An AI powered document intelligence tool to extract text from various PDF, Scanned PDF, images etc.
 Full-stack application with integrated frontend and backend.
+This tool is designed for universal use — anyone with Python 3 and the required libraries can install and run it, with no API keys or external setup needed.
 
 Uses fastAPI, Tesseract and SQLite to extract.
 Tesseract link for link and download: https://github.com/UB-Mannheim/tesseract/wiki
