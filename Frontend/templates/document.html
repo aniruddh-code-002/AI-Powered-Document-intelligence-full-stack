@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+  <h2>{{ doc.filename }}</h2>
+  <p><b>MIME:</b> {{ doc.content_type }} | <b>Created:</b> {{ doc.created_at.strftime('%Y-%m-%d %H:%M') }}</p>
+  <p><b>Invoice #:</b> {{ doc.invoice_number or "-" }} |
+     <b>Amount:</b> {{ doc.amount or "-" }} |
+     <b>Email:</b> {{ doc.email or "-" }} |
+     <b>Date:</b> {{ doc.date or "-" }}</p>
+  <hr />
+  <pre class="mono">{{ doc.text or "(no text extracted)" }}</pre>
+</section>
+{% endblock %}
