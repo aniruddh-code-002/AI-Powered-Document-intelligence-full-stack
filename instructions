@@ -1,0 +1,27 @@
+Here are the steps to ensure the flawless running of the tool:
+
+Must have a python3 installed (Latest version preffered)
+Download and install Tesseract-ocr from : https://github.com/UB-Mannheim/tesseract/wiki
+
+Note: the frontend and backend folder are for organizing files in the repository and not representing the current tool structure
+Clone the repository and make sure Folders inside frontend folder that is static and templates will be in same directory as main.py and requirements.
+
+Note: Given instructions are as per windows operating system
+In terminal: 
+Setup a virtual environment: python -m venv venv
+acitvate the virtual environment: venv\Scripts\activate
+install the required libraries of python as per: python -m pip install -r requirements.txt
+
+Run the project using: uvicorn main:app --reload
+By default the hosting will be at: http://127.0.0.1:8000
+you can use any browser to access it
+
+After having done with the use of the tool
+To stop the project: ctrl+c
+Deactivate the virtual environemnt: deactivate
+
+When running the tool after hosting:
+select document and click on upload and extract the document you like. it will take you to a: http://127.0.0.1:8000/upload
+watch the "ok" status if it is true then the document are successfully uploaded in the local server and text extraction is successful
+A "documents.db" file will be generated and "/uploads" folder will be created in the local directory from where the tool was hosted
+Go back to the previous page and if under documents section your uploaded document is not visible then REFRESH the page and click on open button under view
