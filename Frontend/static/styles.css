@@ -1,0 +1,17 @@
+:root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#3b82f6; }
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,Segoe UI,Arial}
+header{padding:18px 24px;border-bottom:1px solid #1f2937}
+h1{margin:0;font-size:20px}
+main{max-width:1000px;margin:24px auto;padding:0 16px}
+.card{background:var(--card);border:1px solid #1f2937;border-radius:12px;padding:16px;margin-bottom:16px}
+label{display:block;margin-bottom:6px}
+input[type="file"],input[type="text"]{padding:8px;border-radius:8px;border:1px solid #1f2937;background:#0b1220;color:var(--text);width:100%}
+button{margin-top:8px;padding:10px 14px;border:0;border-radius:10px;background:var(--accent);color:white;cursor:pointer}
+button:hover{opacity:.9}
+.hint{color:var(--muted);font-size:13px;margin-top:8px}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px;border-top:1px solid #1f2937;text-align:left;font-size:14px}
+pre.mono{white-space:pre-wrap;background:#0b1220;border:1px solid #1f2937;border-radius:8px;padding:12px}
+a{color:#60a5fa;text-decoration:none}
+a:hover{text-decoration:underline}
